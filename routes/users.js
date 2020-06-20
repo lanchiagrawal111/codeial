@@ -6,9 +6,11 @@ const userController=require('../controllers/users_controller');
 
 // request to profile url
   router.get('/profile',userController.profile);
+ 
+  router.get('/sign-up',userController.signUp);
+  router.get('/sign-in',userController.signIn);
+  router.post('/create',userController.create);
 
-// when profile route hit call this
-router.get('/profile',userController.profile);
 
 
 
